@@ -1,0 +1,60 @@
+body{
+    background: rosybrown;
+}
+
+h2,p{
+    margin:0;
+}
+.card-item a{
+    /* Read말고 나머지는 a태그 적용시키지 않기 위해 */
+    text-decoration: none;
+    color:#29363d;
+    display: block;
+    width:288px;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-item img{
+    width:100%;
+    /* 비율 맞추기 */
+    aspect-ratio: 288/196;
+    /* 이미지가 찌그러지니까 이걸 해줘야함 */
+    object-fit: cover;
+    /* 여백이 사라지게 */
+    vertical-align: top;
+}
+
+.card-text{
+    background: gold;
+    padding:24px 16px 16px;
+}
+
+.card-text .title{
+    font-size:16px;
+    /* 텍스트 길이가 넘어갔을때 말줄임표시를 하겠다 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* .title + p 해도 됨, 하지만 이게 더 명확하고 가독성 좋음 */
+.card-text .title + p{
+    font-size:12px;
+    color:#5a6a72;
+    overflow: hidden;
+    /* 아직 이걸 잘 모르겠음. 복습 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    margin:12px 0 16px;
+}
+
+.underline{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size:14px;
+    padding-left: 6px;
+}

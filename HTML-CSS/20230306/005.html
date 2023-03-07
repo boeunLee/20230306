@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        div{
+            display: inline;
+            background: rosybrown;
+        }
+        div~div{
+            margin-top:10px;
+        }
+        span{
+            display: inline-block;
+            background: salmon;
+            /* display를 inline-block으로 하면 width 적용됨 */
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        블록
+    </div>
+    <div>
+        블록
+    </div>
+    <div>
+        블록
+    </div>
+    
+    <!-- 엔터가 있기 때문에 인라인 블록 간 공백이 생김
+    만약에 공백없이 하고싶으면 엔터 치지 않고 붙여써야함 -->
+    <span>인라인</span>
+    <span>인라인</span>
+    <span>인라인</span>
+</body>
+</html>
